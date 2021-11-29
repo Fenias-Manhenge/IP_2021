@@ -48,10 +48,30 @@ public class Ficha2 {
         Arrays.sort(numeros);
         System.out.println(Arrays.asList(numeros));
     }
+    
+    public void exercicio3 () throws Exception{
+        //Float[] fim = {00.0, 04.0, 08.0};
+    }
+    
+    public void exercicio4() throws Exception{
+        
+        System.out.println("Digite o 1º numero:");
+        float numeros = Float.parseFloat(br.readLine());
+        System.out.println("Digite o 2º numero:");
+        float numeros1 = Float.parseFloat(br.readLine());
+        
+        System.out.println("\nDigite o operador:");
+        switch(br.readLine().charAt(0)){
+            case '+' : System.out.println("\nA soma é " + (numeros + numeros1)); break;
+            case '-' : System.out.println("\nA subtracao é " + (numeros - numeros1)); break;
+            case '*' : System.out.println("\nA multiplicacao é " + (numeros * numeros1)); break;
+            case '/' : System.out.println("\nA divisao é " + (numeros / numeros1)); break;
+        }
+    }
 
     public static void main(String[] args) throws Exception{
         Ficha2 f = new Ficha2();
-        f.exercicio1();
+        f.exercicio4();
     }
     
 }
